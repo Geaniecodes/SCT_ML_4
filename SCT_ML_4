@@ -1,0 +1,25 @@
+# Hand Gesture Recognition (Simulation)
+# No external modules required
+
+def classify_gesture(input_data):
+    gestures = {
+        "1": "Thumbs Up 👍",
+        "2": "Peace Sign ✌️",
+        "3": "Stop Sign ✋",
+        "4": "Fist ✊",
+        "5": "OK Sign 👌"
+    }
+
+    if input_data in gestures:
+        return f"Recognized Gesture: {gestures[input_data]}"
+    else:
+        return "Unknown gesture. Try 1-5."
+
+# Main Program
+print("=== Hand Gesture Recognition Simulator ===")
+print("Enter a number (1-5) to simulate a gesture:")
+print("1 - Thumbs Up, 2 - Peace Sign, 3 - Stop Sign, 4 - Fist, 5 - OK Sign")
+
+user_input = input("Enter your choice: ")
+result = classify_gesture(user_input)
+print(result)
