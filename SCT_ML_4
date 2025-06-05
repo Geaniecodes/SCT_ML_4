@@ -1,5 +1,4 @@
 # Hand Gesture Recognition (Simulation)
-# No external modules required
 
 def classify_gesture(input_data):
     gestures = {
